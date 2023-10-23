@@ -1,0 +1,14 @@
+C:\Project\csharp\DoubleOrTriple\bin\Debug\net7.0\DoubleOrTriple.exe
+C:\Project\csharp\DoubleOrTriple\bin\Debug\net7.0\DoubleOrTriple.deps.json
+C:\Project\csharp\DoubleOrTriple\bin\Debug\net7.0\DoubleOrTriple.runtimeconfig.json
+C:\Project\csharp\DoubleOrTriple\bin\Debug\net7.0\DoubleOrTriple.dll
+C:\Project\csharp\DoubleOrTriple\bin\Debug\net7.0\DoubleOrTriple.pdb
+C:\Project\csharp\DoubleOrTriple\obj\Debug\net7.0\DoubleOrTriple.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\csharp\DoubleOrTriple\obj\Debug\net7.0\DoubleOrTriple.AssemblyInfoInputs.cache
+C:\Project\csharp\DoubleOrTriple\obj\Debug\net7.0\DoubleOrTriple.AssemblyInfo.cs
+C:\Project\csharp\DoubleOrTriple\obj\Debug\net7.0\DoubleOrTriple.csproj.CoreCompileInputs.cache
+C:\Project\csharp\DoubleOrTriple\obj\Debug\net7.0\DoubleOrTriple.dll
+C:\Project\csharp\DoubleOrTriple\obj\Debug\net7.0\refint\DoubleOrTriple.dll
+C:\Project\csharp\DoubleOrTriple\obj\Debug\net7.0\DoubleOrTriple.pdb
+C:\Project\csharp\DoubleOrTriple\obj\Debug\net7.0\DoubleOrTriple.genruntimeconfig.cache
+C:\Project\csharp\DoubleOrTriple\obj\Debug\net7.0\ref\DoubleOrTriple.dll
