@@ -1,0 +1,14 @@
+C:\Project\csharp\CirclePerimeter\bin\Debug\net7.0\CirclePerimeter.exe
+C:\Project\csharp\CirclePerimeter\bin\Debug\net7.0\CirclePerimeter.deps.json
+C:\Project\csharp\CirclePerimeter\bin\Debug\net7.0\CirclePerimeter.runtimeconfig.json
+C:\Project\csharp\CirclePerimeter\bin\Debug\net7.0\CirclePerimeter.dll
+C:\Project\csharp\CirclePerimeter\bin\Debug\net7.0\CirclePerimeter.pdb
+C:\Project\csharp\CirclePerimeter\obj\Debug\net7.0\CirclePerimeter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\csharp\CirclePerimeter\obj\Debug\net7.0\CirclePerimeter.AssemblyInfoInputs.cache
+C:\Project\csharp\CirclePerimeter\obj\Debug\net7.0\CirclePerimeter.AssemblyInfo.cs
+C:\Project\csharp\CirclePerimeter\obj\Debug\net7.0\CirclePerimeter.csproj.CoreCompileInputs.cache
+C:\Project\csharp\CirclePerimeter\obj\Debug\net7.0\CirclePerimeter.dll
+C:\Project\csharp\CirclePerimeter\obj\Debug\net7.0\refint\CirclePerimeter.dll
+C:\Project\csharp\CirclePerimeter\obj\Debug\net7.0\CirclePerimeter.pdb
+C:\Project\csharp\CirclePerimeter\obj\Debug\net7.0\CirclePerimeter.genruntimeconfig.cache
+C:\Project\csharp\CirclePerimeter\obj\Debug\net7.0\ref\CirclePerimeter.dll
