@@ -1,0 +1,14 @@
+C:\Project\csharp\RootOrSquare\bin\Debug\net7.0\RootOrSquare.exe
+C:\Project\csharp\RootOrSquare\bin\Debug\net7.0\RootOrSquare.deps.json
+C:\Project\csharp\RootOrSquare\bin\Debug\net7.0\RootOrSquare.runtimeconfig.json
+C:\Project\csharp\RootOrSquare\bin\Debug\net7.0\RootOrSquare.dll
+C:\Project\csharp\RootOrSquare\bin\Debug\net7.0\RootOrSquare.pdb
+C:\Project\csharp\RootOrSquare\obj\Debug\net7.0\RootOrSquare.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\csharp\RootOrSquare\obj\Debug\net7.0\RootOrSquare.AssemblyInfoInputs.cache
+C:\Project\csharp\RootOrSquare\obj\Debug\net7.0\RootOrSquare.AssemblyInfo.cs
+C:\Project\csharp\RootOrSquare\obj\Debug\net7.0\RootOrSquare.csproj.CoreCompileInputs.cache
+C:\Project\csharp\RootOrSquare\obj\Debug\net7.0\RootOrSquare.dll
+C:\Project\csharp\RootOrSquare\obj\Debug\net7.0\refint\RootOrSquare.dll
+C:\Project\csharp\RootOrSquare\obj\Debug\net7.0\RootOrSquare.pdb
+C:\Project\csharp\RootOrSquare\obj\Debug\net7.0\RootOrSquare.genruntimeconfig.cache
+C:\Project\csharp\RootOrSquare\obj\Debug\net7.0\ref\RootOrSquare.dll
