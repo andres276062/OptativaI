@@ -1,0 +1,14 @@
+C:\Project\csharp\MidweekDay\bin\Debug\net7.0\MidweekDay.exe
+C:\Project\csharp\MidweekDay\bin\Debug\net7.0\MidweekDay.deps.json
+C:\Project\csharp\MidweekDay\bin\Debug\net7.0\MidweekDay.runtimeconfig.json
+C:\Project\csharp\MidweekDay\bin\Debug\net7.0\MidweekDay.dll
+C:\Project\csharp\MidweekDay\bin\Debug\net7.0\MidweekDay.pdb
+C:\Project\csharp\MidweekDay\obj\Debug\net7.0\MidweekDay.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\csharp\MidweekDay\obj\Debug\net7.0\MidweekDay.AssemblyInfoInputs.cache
+C:\Project\csharp\MidweekDay\obj\Debug\net7.0\MidweekDay.AssemblyInfo.cs
+C:\Project\csharp\MidweekDay\obj\Debug\net7.0\MidweekDay.csproj.CoreCompileInputs.cache
+C:\Project\csharp\MidweekDay\obj\Debug\net7.0\MidweekDay.dll
+C:\Project\csharp\MidweekDay\obj\Debug\net7.0\refint\MidweekDay.dll
+C:\Project\csharp\MidweekDay\obj\Debug\net7.0\MidweekDay.pdb
+C:\Project\csharp\MidweekDay\obj\Debug\net7.0\MidweekDay.genruntimeconfig.cache
+C:\Project\csharp\MidweekDay\obj\Debug\net7.0\ref\MidweekDay.dll
