@@ -1,0 +1,14 @@
+C:\Project\csharp\StringLength\bin\Debug\net7.0\StringLength.exe
+C:\Project\csharp\StringLength\bin\Debug\net7.0\StringLength.deps.json
+C:\Project\csharp\StringLength\bin\Debug\net7.0\StringLength.runtimeconfig.json
+C:\Project\csharp\StringLength\bin\Debug\net7.0\StringLength.dll
+C:\Project\csharp\StringLength\bin\Debug\net7.0\StringLength.pdb
+C:\Project\csharp\StringLength\obj\Debug\net7.0\StringLength.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\csharp\StringLength\obj\Debug\net7.0\StringLength.AssemblyInfoInputs.cache
+C:\Project\csharp\StringLength\obj\Debug\net7.0\StringLength.AssemblyInfo.cs
+C:\Project\csharp\StringLength\obj\Debug\net7.0\StringLength.csproj.CoreCompileInputs.cache
+C:\Project\csharp\StringLength\obj\Debug\net7.0\StringLength.dll
+C:\Project\csharp\StringLength\obj\Debug\net7.0\refint\StringLength.dll
+C:\Project\csharp\StringLength\obj\Debug\net7.0\StringLength.pdb
+C:\Project\csharp\StringLength\obj\Debug\net7.0\StringLength.genruntimeconfig.cache
+C:\Project\csharp\StringLength\obj\Debug\net7.0\ref\StringLength.dll
