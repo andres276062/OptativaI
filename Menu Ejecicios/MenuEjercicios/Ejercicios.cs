@@ -1,366 +1,431 @@
 using System;
 
-public class Ejercicios
+class Program
 {
-    public static void PositivePowerExercise()
+    static void Main()
     {
-        Console.Write("Ingresa un número: ");
-        if (double.TryParse(Console.ReadLine(), out double number))
+        bool exit = false;
+        while (!exit)
         {
-            if (number > 0)
-            {
-                double result = number * number;
-                Console.WriteLine("Resultado: " + result);
-            }
-            else if (number < 0)
-            {
-                Console.WriteLine("Resultado: Número negativo.");
-            }
-            else
-            {
-                Console.WriteLine("Resultado: 0");
-            }
-        }
-        else
-        {
-            Console.WriteLine("Entrada no válida. Debes ingresar un número.");
-        }
-    }
+            Console.WriteLine("Menú de Ejercicios:");
+            Console.WriteLine("1. Positive Power");
+            Console.WriteLine("2. Double or Triple");
+            Console.WriteLine("3. Root or Square");
+            Console.WriteLine("4. Circle Perimeter");
+            Console.WriteLine("5. Midweek Day");
+            Console.WriteLine("6. Tax Calculator");
+            Console.WriteLine("7. Remainder Finder");
+            Console.WriteLine("8. Sum of Evens");
+            Console.WriteLine("9. Fraction Difference");
+            Console.WriteLine("10. String Length");
+            Console.WriteLine("11. Average of Four");
+            Console.WriteLine("12. Smallest of Five");
+            Console.WriteLine("13. Vowel Counter");
+            Console.WriteLine("14. Factorial Finder");
+            Console.WriteLine("15. InRange Validator");
+            Console.WriteLine("0. Salir");
+            Console.Write("Selecciona un ejercicio (0 para salir): ");
 
-    public static void DoubleOrTripleExercise()
-    {
-        Console.Write("Ingresa el primer número: ");
-        if (double.TryParse(Console.ReadLine(), out double num1))
-        {
-            Console.Write("Ingresa el segundo número: ");
-            if (double.TryParse(Console.ReadLine(), out double num2))
+            if (int.TryParse(Console.ReadLine(), out int choice))
             {
-                double result = (num1 > num2) ? num1 * 2 : num2 * 3;
-                Console.WriteLine("Resultado: " + result);
-            }
-            else
-            {
-                Console.WriteLine("Entrada no válida para el segundo número.");
-            }
-        }
-        else
-        {
-            Console.WriteLine("Entrada no válida para el primer número.");
-        }
-    }
-
-    public static void RootOrSquareExercise()
-    {
-        Console.Write("Ingresa un número: ");
-        if (double.TryParse(Console.ReadLine(), out double number))
-        {
-            if (number > 0)
-            {
-                double result = Math.Sqrt(number);
-                Console.WriteLine("Resultado: " + result);
-            }
-            else
-            {
-                double result = number * number;
-                Console.WriteLine("Resultado: " + result);
-            }
-        }
-        else
-        {
-            Console.WriteLine("Entrada no válida. Debes ingresar un número.");
-        }
-    }
-
-    public static void CirclePerimeterExercise()
-    {
-        Console.Write("Ingresa el radio de un círculo: ");
-        if (double.TryParse(Console.ReadLine(), out double radius))
-        {
-            double result = 2 * Math.PI * radius;
-            Console.WriteLine("Resultado: " + result.ToString("F2"));
-        }
-        else
-        {
-            Console.WriteLine("Entrada no válida. Debes ingresar un número.");
-        }
-    }
-
-    public static void MidweekDayExercise()
-    {
-        Console.Write("Ingresa un número entre 1 y 7: ");
-        if (int.TryParse(Console.ReadLine(), out int day))
-        {
-            switch (day)
-            {
-                case 1:
-                    Console.WriteLine("Resultado: Lunes");
-                    break;
-                case 2:
-                    Console.WriteLine("Resultado: Martes");
-                    break;
-                case 3:
-                    Console.WriteLine("Resultado: Miércoles");
-                    break;
-                case 4:
-                    Console.WriteLine("Resultado: Jueves");
-                    break;
-                case 5:
-                    Console.WriteLine("Resultado: Viernes");
-                    break;
-                case 6:
-                    Console.WriteLine("Resultado: Sábado");
-                    break;
-                case 7:
-                    Console.WriteLine("Resultado: Domingo");
-                    break;
-                default:
-                    Console.WriteLine("Resultado: Número fuera del rango laboral.");
-                    break;
-            }
-        }
-        else
-        {
-            Console.WriteLine("Entrada no válida. Debes ingresar un número.");
-        }
-    }
-
-    public static void TaxCalculatorExercise()
-    {
-        Console.Write("Ingresa tu salario anual: ");
-        if (double.TryParse(Console.ReadLine(), out double salary))
-        {
-            if (salary > 12000)
-            {
-                double tax = 0.15 * (salary - 12000);
-                Console.WriteLine("Resultado: " + tax);
-            }
-            else
-            {
-                Console.WriteLine("Resultado: No debe impuestos.");
-            }
-        }
-        else
-        {
-            Console.WriteLine("Entrada no válida. Debes ingresar un número.");
-        }
-    }
-
-    public static void RemainderFinderExercise()
-    {
-        Console.Write("Ingresa el primer número: ");
-        if (int.TryParse(Console.ReadLine(), out int num1))
-        {
-            Console.Write("Ingresa el segundo número: ");
-            if (int.TryParse(Console.ReadLine(), out int num2))
-            {
-                if (num2 != 0)
+                switch (choice)
                 {
-                    int result = num1 % num2;
-                    Console.WriteLine("Resultado: " + result);
+                    case 1:
+                        PositivePower.Exercise();
+                        break;
+                    case 2:
+                        DoubleOrTriple.Exercise();
+                        break;
+                    case 3:
+                        RootOrSquare.Exercise();
+                        break;
+                    case 4:
+                        CirclePerimeter.Exercise();
+                        break;
+                    case 5:
+                        MidweekDay.Exercise();
+                        break;
+                    case 6:
+                        TaxCalculator.Exercise();
+                        break;
+                    case 7:
+                        RemainderFinder.Exercise();
+                        break;
+                    case 8:
+                        SumOfEvens.Exercise();
+                        break;
+                    case 9:
+                        FractionDifference.Exercise();
+                        break;
+                    case 10:
+                        StringLength.Exercise();
+                        break;
+                    case 11:
+                        AverageOfFour.Exercise();
+                        break;
+                    case 12:
+                        SmallestOfFive.Exercise();
+                        break;
+                    case 13:
+                        VowelCounter.Exercise();
+                        break;
+                    case 14:
+                        FactorialFinder.Exercise();
+                        break;
+                    case 15:
+                        InRangeValidator.Exercise();
+                        break;
+                    case 0:
+                        Console.WriteLine("Saliendo del programa.");
+                        exit = true;
+                        break;
+                    default:
+                        Console.WriteLine("Opción no válida. Inténtalo de nuevo.");
+                        break;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Entrada no válida. Debe ingresar un número.");
+            }
+        }
+    }
+
+    public class PositivePower
+    {
+        public static void Exercise()
+        {
+            Console.Write("Ingrese un número: ");
+            if (double.TryParse(Console.ReadLine(), out double number))
+            {
+                if (number >= 0)
+                {
+                    double result = Math.Pow(number, 2);
+                    Console.WriteLine($"Resultado: {result}");
                 }
                 else
                 {
-                    Console.WriteLine("No puedes dividir por cero.");
+                    Console.WriteLine("Resultado: Número negativo.");
                 }
             }
             else
             {
-                Console.WriteLine("Entrada no válida para el segundo número.");
+                Console.WriteLine("Entrada no válida. Debe ingresar un número.");
             }
         }
-        else
-        {
-            Console.WriteLine("Entrada no válida para el primer número.");
-        }
     }
 
-    public static void SumOfEvensExercise()
+    public class DoubleOrTriple
     {
-        int sum = 0;
-        for (int i = 2; i <= 50; i += 2)
+        public static void Exercise()
         {
-            sum += i;
-        }
-        Console.WriteLine("Resultado: " + sum);
-    }
-
-    public static void FractionDifferenceExercise()
-    {
-        Console.Write("Ingresa el numerador de la primera fracción: ");
-        if (int.TryParse(Console.ReadLine(), out int num1))
-        {
-            Console.Write("Ingresa el denominador de la primera fracción: ");
-            if (int.TryParse(Console.ReadLine(), out int denom1) && denom1 != 0)
+            Console.Write("Ingrese dos números separados por comas: ");
+            string[] inputs = Console.ReadLine().Split(',');
+            if (inputs.Length == 2 && double.TryParse(inputs[0], out double num1) && double.TryParse(inputs[1], out double num2))
             {
-                Console.Write("Ingresa el numerador de la segunda fracción: ");
-                if (int.TryParse(Console.ReadLine(), out int num2))
+                if (num1 > num2)
                 {
-                    Console.Write("Ingresa el denominador de la segunda fracción: ");
-                    if (int.TryParse(Console.ReadLine(), out int denom2) && denom2 != 0)
+                    double result = num1 * 2;
+                    Console.WriteLine($"Resultado: {result}");
+                }
+                else
+                {
+                    double result = num2 * 3;
+                    Console.WriteLine($"Resultado: {result}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Entrada no válida. Debe ingresar dos números separados por comas.");
+            }
+        }
+    }
+
+    public class RootOrSquare
+    {
+        public static void Exercise()
+        {
+            Console.Write("Ingrese un número: ");
+            if (double.TryParse(Console.ReadLine(), out double number))
+            {
+                if (number >= 0)
+                {
+                    double result = Math.Sqrt(number);
+                    Console.WriteLine($"Resultado: {result}");
+                }
+                else
+                {
+                    double result = Math.Pow(number, 2);
+                    Console.WriteLine($"Resultado: {result}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Entrada no válida. Debe ingresar un número.");
+            }
+        }
+    }
+
+    public class CirclePerimeter
+    {
+        public static void Exercise()
+        {
+            Console.Write("Ingrese el radio de un círculo: ");
+            if (double.TryParse(Console.ReadLine(), out double radius))
+            {
+                if (radius >= 0)
+                {
+                    double result = 2 * Math.PI * radius;
+                    Console.WriteLine($"Resultado: {result:F2}");
+                }
+                else
+                {
+                    Console.WriteLine("Entrada no válida. El radio debe ser no negativo.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Entrada no válida. Debe ingresar un número.");
+            }
+        }
+    }
+
+    public class MidweekDay
+    {
+        public static void Exercise()
+        {
+            Console.Write("Ingrese un número entre 1 y 7: ");
+            if (int.TryParse(Console.ReadLine(), out int day))
+            {
+                string[] daysOfWeek = { "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo" };
+                if (day >= 1 && day <= 7)
+                {
+                    if (day >= 1 && day <= 5)
                     {
-                        int resultNum = num1 * denom2 - num2 * denom1;
-                        int resultDenom = denom1 * denom2;
-                        SimplifyFraction(ref resultNum, ref resultDenom);
-                        Console.WriteLine("Resultado: " + resultNum + "/" + resultDenom);
+                        Console.WriteLine($"Resultado: {daysOfWeek[day - 1]}");
                     }
                     else
                     {
-                        Console.WriteLine("Entrada no válida para el denominador de la segunda fracción.");
+                        Console.WriteLine("Resultado: Número fuera del rango laboral.");
                     }
                 }
                 else
                 {
-                    Console.WriteLine("Entrada no válida para el numerador de la segunda fracción.");
+                    Console.WriteLine("Entrada no válida. El número debe estar entre 1 y 7.");
                 }
             }
             else
             {
-                Console.WriteLine("Entrada no válida para el denominador de la primera fracción.");
+                Console.WriteLine("Entrada no válida. Debe ingresar un número.");
             }
-        }
-        else
-        {
-            Console.WriteLine("Entrada no válida para el numerador de la primera fracción.");
         }
     }
 
-    public static void StringLengthExercise()
+    public class TaxCalculator
     {
-        Console.Write("Ingresa una palabra: ");
-        string word = Console.ReadLine();
-        int length = word.Length;
-        Console.WriteLine("Resultado: " + length);
-    }
-
-    public static void AverageOfFourExercise()
-    {
-        double sum = 0;
-        for (int i = 1; i <= 4; i++)
+        public static void Exercise()
         {
-            Console.Write("Ingresa el número " + i + ": ");
-            if (double.TryParse(Console.ReadLine(), out double num))
+            Console.Write("Ingrese su salario anual: ");
+            if (double.TryParse(Console.ReadLine(), out double salary))
             {
-                sum += num;
-            }
-            else
-            {
-                Console.WriteLine("Entrada no válida para el número " + i + ". Debes ingresar un número.");
-                return;
-            }
-        }
-        double average = sum / 4;
-        Console.WriteLine("Resultado: " + average);
-    }
-
-    public static void SmallestOfFiveExercise()
-    {
-        double smallest = double.MaxValue;
-        for (int i = 1; i <= 5; i++)
-        {
-            Console.Write("Ingresa el número " + i + ": ");
-            if (double.TryParse(Console.ReadLine(), out double num))
-            {
-                if (num < smallest)
+                double tax = 0;
+                if (salary > 12000)
                 {
-                    smallest = num;
+                    tax = (salary - 12000) * 0.15;
+                }
+                Console.WriteLine($"Resultado: {tax}");
+            }
+            else
+            {
+                Console.WriteLine("Entrada no válida. Debe ingresar un número.");
+            }
+        }
+    }
+
+    public class RemainderFinder
+    {
+        public static void Exercise()
+        {
+            Console.Write("Ingrese dos números separados por comas: ");
+            string[] inputs = Console.ReadLine().Split(',');
+            if (inputs.Length == 2 && int.TryParse(inputs[0], out int num1) && int.TryParse(inputs[1], out int num2))
+            {
+                int result = num1 % num2;
+                Console.WriteLine($"Resultado: {result}");
+            }
+            else
+            {
+                Console.WriteLine("Entrada no válida. Debe ingresar dos números enteros separados por comas.");
+            }
+        }
+    }
+
+    public class SumOfEvens
+    {
+        public static void Exercise()
+        {
+            int sum = 0;
+            for (int i = 2; i <= 50; i += 2)
+            {
+                sum += i;
+            }
+            Console.WriteLine($"Resultado: {sum}");
+        }
+    }
+
+    public class FractionDifference
+    {
+        public static void Exercise()
+        {
+            Console.Write("Ingrese dos fracciones en el formato 'a/b, c/d': ");
+            string[] inputs = Console.ReadLine().Split(',');
+            if (inputs.Length == 2)
+            {
+                string[] fractions1 = inputs[0].Split('/');
+                string[] fractions2 = inputs[1].Split('/');
+                if (fractions1.Length == 2 && fractions2.Length == 2 &&
+                    int.TryParse(fractions1[0], out int a) && int.TryParse(fractions1[1], out int b) &&
+                    int.TryParse(fractions2[0], out int c) && int.TryParse(fractions2[1], out int d) &&
+                    b != 0 && d != 0)
+                {
+                    int numerator1 = a * d;
+                    int numerator2 = c * b;
+                    int denominator = b * d;
+                    int resultNumerator = numerator1 - numerator2;
+                    Console.WriteLine($"Resultado: {resultNumerator}/{denominator}");
+                }
+                else
+                {
+                    Console.WriteLine("Entrada no válida. Debe ingresar fracciones válidas.");
                 }
             }
             else
             {
-                Console.WriteLine("Entrada no válida para el número " + i + ". Debes ingresar un número.");
-                return;
+                Console.WriteLine("Entrada no válida. Debe ingresar dos fracciones separadas por una coma.");
             }
         }
-        Console.WriteLine("Resultado: " + smallest);
     }
 
-    public static void VowelCounterExercise()
+    public class StringLength
     {
-        Console.Write("Ingresa una palabra: ");
-        string word = Console.ReadLine();
-        int vowelCount = CountVowels(word);
-        Console.WriteLine("Resultado: " + vowelCount);
-    }
-
-    public static int CountVowels(string text)
-    {
-        string vowels = "aeiouAEIOU";
-        int count = 0;
-        foreach (char c in text)
+        public static void Exercise()
         {
-            if (vowels.Contains(c))
-            {
-                count++;
-            }
+            Console.Write("Ingrese una palabra: ");
+            string word = Console.ReadLine();
+            int length = word.Length;
+            Console.WriteLine($"Resultado: {length}");
         }
-        return count;
     }
 
-    public static void FactorialFinderExercise()
+    public class AverageOfFour
     {
-        Console.Write("Ingresa un número: ");
-        if (int.TryParse(Console.ReadLine(), out int n))
+        public static void Exercise()
         {
-            if (n >= 0)
+            Console.Write("Ingrese cuatro números separados por comas: ");
+            string[] inputs = Console.ReadLine().Split(',');
+            if (inputs.Length == 4 && double.TryParse(inputs[0], out double num1) &&
+                double.TryParse(inputs[1], out double num2) &&
+                double.TryParse(inputs[2], out double num3) &&
+                double.TryParse(inputs[3], out double num4))
             {
-                int result = CalculateFactorial(n);
-                Console.WriteLine("Resultado: " + result);
+                double average = (num1 + num2 + num3 + num4) / 4;
+                Console.WriteLine($"Resultado: {average}");
             }
             else
             {
-                Console.WriteLine("Resultado: El número debe ser no negativo.");
+                Console.WriteLine("Entrada no válida. Debe ingresar cuatro números separados por comas.");
             }
         }
-        else
-        {
-            Console.WriteLine("Entrada no válida. Debes ingresar un número entero.");
-        }
     }
 
-    public static int CalculateFactorial(int n)
+    public class SmallestOfFive
     {
-        if (n == 0)
+        public static void Exercise()
         {
-            return 1;
-        }
-        return n * CalculateFactorial(n - 1);
-    }
-
-    public static void InRangeValidatorExercise()
-    {
-        Console.Write("Ingresa un número: ");
-        if (int.TryParse(Console.ReadLine(), out int number))
-        {
-            if (number >= 10 && number <= 20)
+            Console.Write("Ingrese cinco números separados por comas: ");
+            string[] inputs = Console.ReadLine().Split(',');
+            if (inputs.Length == 5 && double.TryParse(inputs[0], out double num1) &&
+                double.TryParse(inputs[1], out double num2) &&
+                double.TryParse(inputs[2], out double num3) &&
+                double.TryParse(inputs[3], out double num4) &&
+                double.TryParse(inputs[4], out double num5))
             {
-                Console.WriteLine("Resultado: Está en el rango.");
+                double min = Math.Min(Math.Min(Math.Min(Math.Min(num1, num2), num3), num4), num5);
+                Console.WriteLine($"Resultado: {min}");
             }
             else
             {
-                Console.WriteLine("Resultado: Fuera del rango.");
+                Console.WriteLine("Entrada no válida. Debe ingresar cinco números separados por comas.");
             }
         }
-        else
+    }
+
+    public class VowelCounter
+    {
+        public static void Exercise()
         {
-            Console.WriteLine("Entrada no válida. Debes ingresar un número entero.");
+            Console.Write("Ingrese una palabra: ");
+            string word = Console.ReadLine().ToLower();
+            int vowelCount = 0;
+            foreach (char c in word)
+            {
+                if ("aeiou".Contains(c))
+                {
+                    vowelCount++;
+                }
+            }
+            Console.WriteLine($"Resultado: {vowelCount}");
         }
     }
 
-    static void SimplifyFraction(ref int num, ref int denom)
+    public class FactorialFinder
     {
-        int gcd = GCD(num, denom);
-        num /= gcd;
-        denom /= gcd;
+        public static void Exercise()
+        {
+            Console.Write("Ingrese un número: ");
+            if (int.TryParse(Console.ReadLine(), out int number))
+            {
+                if (number >= 0)
+                {
+                    int factorial = 1;
+                    for (int i = 2; i <= number; i++)
+                    {
+                        factorial *= i;
+                    }
+                    Console.WriteLine($"Resultado: {factorial}");
+                }
+                else
+                {
+                    Console.WriteLine("Resultado: Número negativo. Debe ingresar un número no negativo.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Entrada no válida. Debe ingresar un número entero.");
+            }
+        }
     }
 
-    static int GCD(int a, int b)
+    public class InRangeValidator
     {
-        while (b != 0)
+        public static void Exercise()
         {
-            int temp = b;
-            b = a % b;
-            a = temp;
+            Console.Write("Ingrese un número: ");
+            if (int.TryParse(Console.ReadLine(), out int number))
+            {
+                if (number >= 10 && number <= 20)
+                {
+                    Console.WriteLine("Resultado: Está en el rango.");
+                }
+                else
+                {
+                    Console.WriteLine("Resultado: Fuera del rango.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Entrada no válida. Debe ingresar un número entero.");
+            }
         }
-        return a;
     }
 }
